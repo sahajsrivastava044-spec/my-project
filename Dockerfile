@@ -23,4 +23,4 @@ USER appuser
 
 EXPOSE 3000
 
-CMD ["node", "seed.js"]   # change if needed
+CMD node server.js
