@@ -3,12 +3,12 @@ const mongoose = require('mongoose');
 const express=require('express');
 const app=express()
 // Ensure these paths match where you put your models
-const Artist = require('../models/Artist');
-const Album = require('../models/Album');
-const Song = require('../models/Song');
-const User = require('../models/User');
-const Playlist = require('../models/Playlist');
-const authRoutes=require('./routes/auth')
+const Artist = require('./models/Artist');
+const Album = require('./models/Album');
+const Song = require('./models/Song');
+const User = require('./models/User');
+const Playlist = require('./models/Playlist');
+const authRoutes=require('./scripts/routes/auth')
 app.use(express.json());
 
 async function seed() {
